@@ -6,6 +6,7 @@ import cv2
 
 #grabamos el video en 10 segundo con una resolucion de 649 x 480
 video=cv2.VideoCapture(0)
+# para leer el video se debe comentar esta linea donde indicamos las captura de la imagen
 videoGrab = cv2.VideoWriter('videograb.avi',cv2.VideoWriter_fourcc(*'xvid'),10.0,(640,480))
 while  (video.isOpened()):
     ret,frame1=video.read()
