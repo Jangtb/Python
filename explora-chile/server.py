@@ -26,8 +26,10 @@ import json
 import os
 import re
 import sqlite3
+import sys
 import threading
 import time
+import webbrowser
 from http import HTTPStatus
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
@@ -245,12 +247,28 @@ def main():
     ap = argparse.ArgumentParser(description="Servidor Explora Chile")
     ap.add_argument("--host", default="0.0.0.0")
     ap.add_argument("--puerto", type=int, default=int(os.environ.get("PORT", 8000)))
+    ap.add_argument("--no-abrir", action="store_true", help="No abrir el navegador automáticamente")
     args = ap.parse_args()
     db().executescript(ESQUEMA)
     if not ADMIN_TOKEN:
         print("Aviso: EXPLORA_ADMIN_TOKEN no definido; la moderación queda deshabilitada.")
-    print(f"Explora Chile en http://localhost:{args.puerto}")
-    ThreadingHTTPServer((args.host, args.puerto), Manejador).serve_forever()
+    try:
+        servidor = ThreadingHTTPServer((args.host, args.puerto), Manejador)
+    except OSError:
+        sys.exit(f"El puerto {args.puerto} está ocupado. ¿Ya tienes la app abierta en otra ventana? "
+                 f"Ciérrala o usa: python server.py --puerto 8001")
+    url = f"http://localhost:{args.puerto}"
+    print("=" * 60)
+    print(f"  Explora Chile funcionando en:  {url}")
+    print("  Deja esta ventana abierta mientras usas la app.")
+    print("  Para apagarla: cierra esta ventana o presiona Ctrl + C")
+    print("=" * 60)
+    if not args.no_abrir:
+        threading.Timer(1.0, webbrowser.open, (url,)).start()
+    try:
+        servidor.serve_forever()
+    except KeyboardInterrupt:
+        print("\nApp detenida. ¡Hasta pronto!")
 
 
 if __name__ == "__main__":

@@ -5,6 +5,23 @@ emprendimientos locales, negocios y senderos. Tiene un mapa estilo juego de
 exploración y un modo satelital. Parte en **Pucón** y está diseñada para escalar a
 cualquier comuna de Chile sin tocar el código.
 
+## ▶️ Cómo probarla (paso a paso)
+
+### En tu computador
+1. Abre la carpeta `explora-chile` (dentro de la carpeta `python` que descargaste).
+2. Doble clic en **`INICIAR-WINDOWS.bat`** (en Mac: `iniciar-mac-linux.command`).
+3. Se abre el navegador solo. **No cierres la ventana negra** mientras usas la app.
+4. Toca el mapa: tu avatar 🟣 camina hasta ahí. Acércate a un ícono y toca la barra
+   de abajo para hacer **check-in**.
+
+¿Aparece "No encontré Python"? Instálalo desde python.org marcando
+**"Add python.exe to PATH"** y repite el paso 2.
+
+### En el celular, con GPS (recorriendo Pucón)
+Una sola vez, en GitHub: **Settings → Pages → Source: GitHub Actions**. Cada vez que el
+código llegue a `master`, la app se publica sola en `https://<usuario>.github.io/<repo>/`.
+Ábrela en el celular → menú del navegador → **"Agregar a pantalla de inicio"**.
+
 ## Cómo funciona
 
 | Función | Detalle |
