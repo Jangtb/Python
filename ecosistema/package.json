@@ -1,0 +1,32 @@
+{
+  "name": "ecosistema-datos",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Ecosistema digital: Datos con Datos, consultoría y Comunidad de Datos.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:e2e": "node tests/e2e/smoke.mjs"
+  },
+  "engines": {
+    "node": ">=20.9"
+  },
+  "dependencies": {
+    "next": "^16.4.6",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "server-only": "^0.0.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.7",
+    "@types/react": "^19.3.3",
+    "@types/react-dom": "^19.3.0",
+    "axe-core": "^4.14.1",
+    "typescript": "5.9",
+    "vitest": "^5.1.2"
+  }
+}

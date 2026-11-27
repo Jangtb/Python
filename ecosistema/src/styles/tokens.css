@@ -1,0 +1,147 @@
+/* =========================================================================
+   TOKENS DE DISEÑO — fuente única de verdad para color, tipografía,
+   espaciado, radios, sombras y movimiento.
+   Breakpoints de referencia (usados en media queries):
+     --bp-sm 640px · --bp-md 880px · --bp-lg 1120px · --bp-xl 1360px
+   ========================================================================= */
+
+:root {
+  /* — Paleta base — */
+  --c-graphite: #202833;
+  --c-deep-navy: #172f46;
+  --c-tech-blue: #397ba9;
+  --c-soft-blue: #91c5e8;
+  --c-editorial-white: #f7f8fa;
+  --c-pure-white: #ffffff;
+  --c-slate: #697786;
+  --c-border: #e3e8ed;
+  --c-warm: #e8e1d6;
+
+  /* Derivados accesibles (contraste AA sobre fondos claros) */
+  --c-slate-strong: #55626f; /* texto secundario sobre #F7F8FA ≥ 5.6:1 */
+  --c-blue-strong: #2e6890;  /* enlaces sobre #F7F8FA ≥ 5.6:1 */
+  --c-warm-soft: #f3efe8;
+  --c-blue-tint: #eef5fb;
+  --c-navy-ink: #0f2133;
+
+  /* Estados */
+  --c-success: #2f7a55;
+  --c-success-tint: #e8f3ed;
+  --c-warning: #8a5a12;
+  --c-warning-tint: #f8efdf;
+  --c-danger: #a33a3a;
+  --c-danger-tint: #f8e9e9;
+
+  /* — Semánticos — */
+  --bg: var(--c-editorial-white);
+  --surface: var(--c-pure-white);
+  --surface-muted: #f0f2f5;
+  --text: var(--c-graphite);
+  --text-muted: var(--c-slate-strong);
+  --text-subtle: var(--c-slate);
+  --border: var(--c-border);
+  --border-strong: #cfd7df;
+  --link: var(--c-blue-strong);
+  --focus: var(--c-tech-blue);
+
+  /* Acento por iniciativa (se redefine con [data-brand]) */
+  --accent: var(--c-tech-blue);
+  --accent-strong: var(--c-blue-strong);
+  --accent-tint: var(--c-blue-tint);
+  --accent-contrast: var(--c-pure-white);
+
+  /* — Tipografía — */
+  --font-display: var(--ff-space-grotesk), "Space Grotesk", system-ui, sans-serif;
+  --font-heading: var(--ff-manrope), "Manrope", system-ui, sans-serif;
+  --font-body: var(--ff-inter), "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: var(--ff-plex-mono), "IBM Plex Mono", ui-monospace, "SFMono-Regular", monospace;
+
+  --fs-display: clamp(2.5rem, 1.5rem + 3.9vw, 4.75rem);
+  --fs-h1: clamp(2.2rem, 1.45rem + 3vw, 3.9rem);
+  --fs-h2: clamp(1.7rem, 1.3rem + 1.7vw, 2.7rem);
+  --fs-h3: clamp(1.2rem, 1.1rem + 0.45vw, 1.45rem);
+  --fs-h4: 1.0625rem;
+  --fs-lead: clamp(1.1rem, 1.03rem + 0.35vw, 1.3rem);
+  --fs-body: 1.0625rem;
+  --fs-sm: 0.9375rem;
+  --fs-xs: 0.8125rem;
+  --fs-mono: 0.75rem;
+
+  --lh-tight: 1.04;
+  --lh-heading: 1.18;
+  --lh-body: 1.65;
+
+  --tracking-display: -0.035em;
+  --tracking-heading: -0.02em;
+  --tracking-mono: 0.08em;
+
+  /* — Espaciado (base 4px) — */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 2.5rem;
+  --space-8: 3rem;
+  --space-9: 4rem;
+  --space-10: 5rem;
+  --space-11: 6.5rem;
+  --space-section: clamp(4rem, 2.5rem + 6vw, 8rem);
+
+  /* — Layout — */
+  --container: 1240px;
+  --container-narrow: 720px;
+  --gutter: clamp(1rem, 0.4rem + 3vw, 2.5rem);
+  --header-h: 68px;
+
+  /* — Radios — */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-pill: 999px;
+
+  /* — Sombras — */
+  --shadow-xs: 0 1px 2px rgb(23 47 70 / 0.05);
+  --shadow-sm: 0 1px 2px rgb(23 47 70 / 0.05), 0 2px 8px rgb(23 47 70 / 0.04);
+  --shadow-md: 0 2px 4px rgb(23 47 70 / 0.04), 0 12px 32px rgb(23 47 70 / 0.08);
+  --shadow-lg: 0 4px 8px rgb(23 47 70 / 0.05), 0 24px 60px rgb(23 47 70 / 0.12);
+
+  /* — Movimiento — */
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --dur-fast: 140ms;
+  --dur: 220ms;
+  --dur-slow: 420ms;
+}
+
+/* Matices por iniciativa — misma identidad, distinto acento */
+[data-brand="dcd"] {
+  --accent: var(--c-tech-blue);
+  --accent-strong: var(--c-blue-strong);
+  --accent-tint: var(--c-warm-soft);
+  --brand-surface: var(--c-warm-soft);
+}
+
+[data-brand="consultoria"] {
+  --accent: var(--c-deep-navy);
+  --accent-strong: var(--c-deep-navy);
+  --accent-tint: #e9eef3;
+  --brand-surface: #eef1f4;
+}
+
+[data-brand="comunidad"] {
+  --accent: #2f6f9c;
+  --accent-strong: #275e85;
+  --accent-tint: var(--c-blue-tint);
+  --brand-surface: var(--c-blue-tint);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-fast: 0ms;
+    --dur: 0ms;
+    --dur-slow: 0ms;
+  }
+}

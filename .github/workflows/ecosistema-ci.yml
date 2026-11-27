@@ -1,0 +1,31 @@
+# Verificación continua del ecosistema web: tipos, pruebas unitarias y build.
+name: Ecosistema · CI
+
+on:
+  push:
+    paths: ["ecosistema/**", ".github/workflows/ecosistema-ci.yml"]
+  pull_request:
+    paths: ["ecosistema/**", ".github/workflows/ecosistema-ci.yml"]
+
+permissions:
+  contents: read
+
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ecosistema
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: ecosistema/package-lock.json
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run build
+        env:
+          NEXT_TELEMETRY_DISABLED: "1"
