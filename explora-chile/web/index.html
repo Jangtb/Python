@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+  <meta name="theme-color" content="#1f8a5b">
+  <title>Explora Chile</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icono.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="mapa" class="estilo-aventura"></div>
+
+  <!-- Barra superior: perfil + selector de comuna -->
+  <header id="barra">
+    <button id="btn-perfil" class="perfil" aria-label="Ver perfil">
+      <span class="avatar-mini">🧭</span>
+      <span class="nivel">Nv <b id="nivel">1</b></span>
+      <span class="xp"><span id="xp-barra"></span></span>
+    </button>
+    <select id="sel-comuna" aria-label="Elegir comuna"></select>
+  </header>
+
+  <!-- Filtros por categoría -->
+  <nav id="filtros" aria-label="Filtrar categorías"></nav>
+
+  <!-- Controles flotantes -->
+  <div id="controles">
+    <button id="btn-capa" title="Cambiar a satélite" aria-label="Cambiar capa">🛰️</button>
+    <button id="btn-centrar" title="Centrar en mí" aria-label="Centrar en mí">🎯</button>
+    <button id="btn-simular" title="Modo simulación: toca el mapa para caminar" aria-label="Modo simulación">🎮</button>
+    <button id="btn-proponer" title="Proponer un lugar nuevo aquí" aria-label="Proponer lugar">➕</button>
+  </div>
+
+  <!-- Radar: lugares cercanos -->
+  <button id="radar" aria-label="Lugares cercanos"><span id="radar-texto">Buscando GPS…</span></button>
+
+  <!-- Hoja inferior (detalle de lugar / perfil / cercanos) -->
+  <section id="hoja" aria-hidden="true">
+    <button class="cerrar" aria-label="Cerrar">✕</button>
+    <div id="hoja-contenido"></div>
+  </section>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <script src="vendor/leaflet/leaflet.js"></script>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

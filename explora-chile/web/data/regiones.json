@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "pais": "Chile",
+  "comuna_inicial": "09115",
+  "regiones": [
+    { "codigo": "15", "nombre": "Arica y Parinacota", "comunas": [] },
+    { "codigo": "01", "nombre": "Tarapacá", "comunas": [] },
+    { "codigo": "02", "nombre": "Antofagasta", "comunas": [] },
+    { "codigo": "03", "nombre": "Atacama", "comunas": [] },
+    { "codigo": "04", "nombre": "Coquimbo", "comunas": [] },
+    { "codigo": "05", "nombre": "Valparaíso", "comunas": [] },
+    { "codigo": "13", "nombre": "Metropolitana de Santiago", "comunas": [] },
+    { "codigo": "06", "nombre": "Libertador General Bernardo O'Higgins", "comunas": [] },
+    { "codigo": "07", "nombre": "Maule", "comunas": [] },
+    { "codigo": "16", "nombre": "Ñuble", "comunas": [] },
+    { "codigo": "08", "nombre": "Biobío", "comunas": [] },
+    {
+      "codigo": "09",
+      "nombre": "La Araucanía",
+      "comunas": [
+        {
+          "cut": "09115",
+          "nombre": "Pucón",
+          "slug": "pucon",
+          "centro": [-39.2800, -71.9600],
+          "zoom": 15,
+          "archivo": "data/araucania/pucon.geojson",
+          "disponible": true
+        },
+        {
+          "cut": "09120",
+          "nombre": "Villarrica",
+          "slug": "villarrica",
+          "centro": [-39.2800, -72.2270],
+          "zoom": 15,
+          "archivo": "data/araucania/villarrica.geojson",
+          "disponible": false
+        },
+        {
+          "cut": "09104",
+          "nombre": "Curarrehue",
+          "slug": "curarrehue",
+          "centro": [-39.3590, -71.5890],
+          "zoom": 15,
+          "archivo": "data/araucania/curarrehue.geojson",
+          "disponible": false
+        }
+      ]
+    },
+    { "codigo": "14", "nombre": "Los Ríos", "comunas": [] },
+    { "codigo": "10", "nombre": "Los Lagos", "comunas": [] },
+    { "codigo": "11", "nombre": "Aysén del General Carlos Ibáñez del Campo", "comunas": [] },
+    { "codigo": "12", "nombre": "Magallanes y de la Antártica Chilena", "comunas": [] }
+  ]
+}

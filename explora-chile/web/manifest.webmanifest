@@ -1,0 +1,15 @@
+{
+  "name": "Explora Chile",
+  "short_name": "Explora",
+  "description": "Recorre y verifica lugares turísticos, emprendimientos, negocios y senderos de Chile.",
+  "lang": "es-CL",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#cfe9d6",
+  "theme_color": "#1f8a5b",
+  "icons": [
+    { "src": "icons/icono.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

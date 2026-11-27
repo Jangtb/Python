@@ -1,0 +1,259 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "comuna": "Pucón",
+    "cut": "09115",
+    "region": "09",
+    "generado": "2026-11-27",
+    "nota": "Datos semilla. Coordenadas APROXIMADAS (verificado=false) pensadas para ser confirmadas en terreno por la comunidad. Los registros con fuente 'demo' son ejemplos y deben reemplazarse por datos reales (tools/importar_osm.py o registro de emprendedores)."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-71.9790, -39.2745] },
+      "properties": {
+        "id": "pucon-playa-grande",
+        "nombre": "Playa Grande de Pucón",
+        "categoria": "turistico",
+        "subcategoria": "playa",
+        "descripcion": "Playa de arena volcánica a orillas del lago Villarrica, con vista al volcán.",
+        "fuente": "semilla",
+        "verificado": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-71.9835, -39.2815] },
+      "properties": {
+        "id": "pucon-la-poza",
+        "nombre": "La Poza",
+        "categoria": "turistico",
+        "subcategoria": "playa",
+        "descripcion": "Bahía protegida, punto de salida de kayak y paseos en lancha.",
+        "fuente": "semilla",
+        "verificado": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-71.9555, -39.2815] },
+      "properties": {
+        "id": "pucon-plaza-armas",
+        "nombre": "Plaza de Armas de Pucón",
+        "categoria": "turistico",
+        "subcategoria": "plaza",
+        "descripcion": "Centro cívico de la ciudad, punto de encuentro y eventos.",
+        "fuente": "semilla",
+        "verificado": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-71.9500, -39.3950] },
+      "properties": {
+        "id": "pucon-volcan-villarrica-base",
+        "nombre": "Volcán Villarrica – sector Centro de Ski",
+        "categoria": "turistico",
+        "subcategoria": "volcan",
+        "descripcion": "Base para ascensos guiados al cráter y centro de ski en invierno. Revisar alerta volcánica (SERNAGEOMIN) antes de subir.",
+        "fuente": "semilla",
+        "verificado": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-71.8190, -39.2010] },
+      "properties": {
+        "id": "pucon-ojos-caburgua",
+        "nombre": "Ojos del Caburgua",
+        "categoria": "turistico",
+        "subcategoria": "cascada",
+        "descripcion": "Pozones de aguas turquesa y cascadas alimentadas por filtraciones del lago Caburgua.",
+        "fuente": "semilla",
+        "verificado": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-71.7920, -39.0950] },
+      "properties": {
+        "id": "pucon-playa-blanca-caburgua",
+        "nombre": "Playa Blanca – Lago Caburgua",
+        "categoria": "turistico",
+        "subcategoria": "playa",
+        "descripcion": "Playa de arena clara en el lago Caburgua.",
+        "fuente": "semilla",
+        "verificado": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-71.7210, -39.1560] },
+      "properties": {
+        "id": "pucon-pn-huerquehue",
+        "nombre": "Parque Nacional Huerquehue (Lago Tinquilco)",
+        "categoria": "turistico",
+        "subcategoria": "parque_nacional",
+        "descripcion": "Bosques de araucarias y lagunas de altura. Acceso con entrada CONAF.",
+        "fuente": "semilla",
+        "verificado": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-71.6900, -39.2380] },
+      "properties": {
+        "id": "pucon-termas-pozones",
+        "nombre": "Termas Los Pozones",
+        "categoria": "turistico",
+        "subcategoria": "termas",
+        "descripcion": "Pozones termales naturales junto al río Liucura.",
+        "fuente": "semilla",
+        "verificado": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-71.8900, -39.2950] },
+      "properties": {
+        "id": "pucon-rio-trancura",
+        "nombre": "Río Trancura (rafting)",
+        "categoria": "turistico",
+        "subcategoria": "aventura",
+        "descripcion": "Tramos de rafting de distintas dificultades.",
+        "fuente": "semilla",
+        "verificado": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "LineString", "coordinates": [
+        [-71.7210, -39.1560], [-71.7150, -39.1520], [-71.7080, -39.1490],
+        [-71.7010, -39.1470], [-71.6960, -39.1440], [-71.6920, -39.1395], [-71.6890, -39.1350]
+      ] },
+      "properties": {
+        "id": "pucon-sendero-los-lagos",
+        "nombre": "Sendero Los Lagos (Huerquehue)",
+        "categoria": "sendero",
+        "subcategoria": "trekking",
+        "descripcion": "Subida entre araucarias hacia lagos Chico, Toro y Verde. Trazado aproximado.",
+        "dificultad": "media",
+        "distancia_km": 7,
+        "fuente": "semilla",
+        "verificado": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "LineString", "coordinates": [
+        [-71.9790, -39.2745], [-71.9805, -39.2765], [-71.9820, -39.2785], [-71.9830, -39.2800], [-71.9835, -39.2815]
+      ] },
+      "properties": {
+        "id": "pucon-costanera",
+        "nombre": "Paseo Costanera Playa Grande – La Poza",
+        "categoria": "sendero",
+        "subcategoria": "paseo_urbano",
+        "descripcion": "Caminata corta junto al lago. Trazado aproximado.",
+        "dificultad": "baja",
+        "distancia_km": 1,
+        "fuente": "semilla",
+        "verificado": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "LineString", "coordinates": [
+        [-71.9500, -39.3950], [-71.9470, -39.4020], [-71.9440, -39.4090], [-71.9410, -39.4150], [-71.9390, -39.4200]
+      ] },
+      "properties": {
+        "id": "pucon-sendero-crater",
+        "nombre": "Ascenso al cráter del Villarrica (solo guiado)",
+        "categoria": "sendero",
+        "subcategoria": "alta_montana",
+        "descripcion": "Ascenso técnico, obligatorio con guía certificado y según alerta volcánica. Trazado aproximado.",
+        "dificultad": "alta",
+        "distancia_km": 5,
+        "fuente": "semilla",
+        "verificado": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-71.9570, -39.2808] },
+      "properties": {
+        "id": "pucon-demo-artesania",
+        "nombre": "Ejemplo: Taller de artesanía en madera nativa",
+        "categoria": "emprendimiento",
+        "subcategoria": "artesania",
+        "descripcion": "Registro de EJEMPLO. Reemplazar por emprendimientos reales inscritos.",
+        "fuente": "demo",
+        "verificado": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-71.9620, -39.2790] },
+      "properties": {
+        "id": "pucon-demo-mapuche",
+        "nombre": "Ejemplo: Cocina mapuche de temporada",
+        "categoria": "emprendimiento",
+        "subcategoria": "gastronomia",
+        "descripcion": "Registro de EJEMPLO. Reemplazar por emprendimientos reales inscritos.",
+        "fuente": "demo",
+        "verificado": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-71.9520, -39.2830] },
+      "properties": {
+        "id": "pucon-demo-miel",
+        "nombre": "Ejemplo: Miel de ulmo y productos locales",
+        "categoria": "emprendimiento",
+        "subcategoria": "productos_locales",
+        "descripcion": "Registro de EJEMPLO. Reemplazar por emprendimientos reales inscritos.",
+        "fuente": "demo",
+        "verificado": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-71.9585, -39.2822] },
+      "properties": {
+        "id": "pucon-demo-cafe",
+        "nombre": "Ejemplo: Café de la avenida",
+        "categoria": "negocio",
+        "subcategoria": "cafe",
+        "descripcion": "Registro de EJEMPLO. Reemplazar con tools/importar_osm.py.",
+        "fuente": "demo",
+        "verificado": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-71.9540, -39.2800] },
+      "properties": {
+        "id": "pucon-demo-arriendo",
+        "nombre": "Ejemplo: Arriendo de bicicletas y kayak",
+        "categoria": "negocio",
+        "subcategoria": "arriendo",
+        "descripcion": "Registro de EJEMPLO. Reemplazar con tools/importar_osm.py.",
+        "fuente": "demo",
+        "verificado": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-71.9600, -39.2835] },
+      "properties": {
+        "id": "pucon-demo-hostal",
+        "nombre": "Ejemplo: Hostal familiar",
+        "categoria": "negocio",
+        "subcategoria": "hospedaje",
+        "descripcion": "Registro de EJEMPLO. Reemplazar con tools/importar_osm.py.",
+        "fuente": "demo",
+        "verificado": false
+      }
+    }
+  ]
+}
